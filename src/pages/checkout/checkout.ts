@@ -14,14 +14,17 @@ import { IonicPage, NavController, NavParams } from "ionic-angular";
   templateUrl: "checkout.html"
 })
 export class CheckoutPage {
-  basket: string;
-  amount: number;
+  // basket: string;
+  // amount: number;
+  productData: { name: string; price: number };
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {}
 
   ngOnInit() {
-    this.basket = this.navParams.get("name");
-    this.amount = this.navParams.get("price");
+    this.productData = this.navParams.data;
+    console.log(this.productData);
+    // this.basket = this.navParams.get("name");
+    // this.amount = this.navParams.get("price");
   }
 
   exitStore() {

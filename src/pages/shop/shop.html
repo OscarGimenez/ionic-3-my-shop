@@ -1,0 +1,18 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>shop</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <p>Hi, I'm Markus!</p>
+  <button ion-button (click)="leaveStore()">Leave</button>
+  <hr>
+  <p>Today, I can offer you...</p>
+  <button ion-button (click)="toCheckout({name: 'Milk', price: '0.99'})">Milk</button>
+  <button ion-button (click)="toCheckout({name: 'Apples', price: '2.49'})">Apples</button>
+  <button ion-button (click)="toCheckout({name: 'Bread', price: '0.85'})">Bread</button>
+</ion-content>
